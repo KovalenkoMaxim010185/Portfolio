@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(../font/Poppins-Regular.ttf);
+}
+body {background-color: #E5E5E5;}
+a {
+    text-decoration: none;
+    color: #4B321D;
+}
+.button{
+    padding: 11px 17px 10px 17px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    color: #4B321D;
+}
+.wrapper {
+    max-width: 1440px;
+    height: auto;
+    margin: 0 auto;
+    background-color: #E5E5E5;
+    position: absolute;
+    font-family: 'Poppins';
+    color: #4B321D;
+    padding: 40px 60px 0 60px;
+    overflow: visible;
+    .header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-between;
+        align-items: center;
+        
+        .logo__img {
+        max-width: 100%;
+        height: auto;
+        
+        }
+        
+        .nav__links {
+        // max-width: 630px;
+        // height: auto;
+        
+        ul {
+            display: flex;
+            li {
+                margin-right: 36px;
+                a {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 29px;
+                }
+            }
+        }      
+        }
+}
+.main {
+    .intro {
+        h1 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 80px;
+            line-height: 125%;
+            color: #4B321D;
+            margin-top: 128px;
+        }
+    }
+    .img__frame {
+        max-width: 1400px;
+        margin: 0 auto;
+        right: +20px;
+        left: +20px;
+        background-color: #E5E5E5;
+        margin-top: 136px;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+    }
+    .projects {
+        h3 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 80px;
+            line-height: 125%;
+            color: #4B321D;
+            margin-top: 84px;
+        }
+    }
+}
+}
