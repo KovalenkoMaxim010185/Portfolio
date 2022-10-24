@@ -1,1 +1,7 @@
-/*# sourceMappingURL=style.css.map */
+.wrapper {
+  min-width: 320px;
+}
+.wrapper .header {
+  background: #283645;
+  box-shadow: 0px 1px 0px #000000;
+}/*# sourceMappingURL=style.css.map */
