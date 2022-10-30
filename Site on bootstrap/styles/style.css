@@ -1,0 +1,15 @@
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+.btn-outline-light {
+    background-color: transparent;
+}
+.btn-outline-light:hover {
+    background-color: lightgreen;
+}
+.dropdown-menu[data-bs-popper] {
+    background-color: black;
+}
+.dropdown-item {
+    color: #fff;
+}
