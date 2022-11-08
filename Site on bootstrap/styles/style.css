@@ -65,3 +65,23 @@
 .icon-box:hover {
     border-color: #ffc451;
 }
+.about li {
+    list-style-type: none;
+}
+.cta {
+    background-image: url(https://images.pexels.com/photos/8681259/pexels-photo-8681259.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    padding: 80px;
+    color: #fff;
+}
+.cta h3 {
+    font-weight: 700;
+    font-size: 28px;
+}
+.cta-btn {
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border: 2px solid #fff;
+}
