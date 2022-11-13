@@ -218,5 +218,78 @@
 .contact .info p {
     padding: 0 0 0 60px;
     font-size: 14px;
+
+}
+.footer-top {
+    background: #151515;
+    color: #fff;
+    border-bottom: 1px solid #222222;
+    padding: 60px 0 30px 0;
+}
+.footer-top .footer-info {
+    margin-bottom: 30px;
+}
+.footer-top .footer-info h3 {
+    font-size: 28px;
+    margin: 0 0 20px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.footer-top .footer-info p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+.footer-top .social-links a {
+    width: 36px;
+    height: 36px;
+    background: #292929;
+    display: inline-block;
+    margin-right: 4px;
+    border-radius: 4px;
+    text-align: center;
+}
+.footer-top .social-links a:hover {
+    background: #ffc451;
+
+}
+.footer-top h4 {
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 12px;
+}
+.footer-links {
+    margin-bottom: 30px;
+}
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     
+}
+.footer-links li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    padding-left: 10px;
+}
+.footer-links a:hover {
+    color: #ffc451;
+    font-size: larger;
+}
+form {
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+.submit-btn-foot {
+    margin-top: 6px;
+}
+.submit-btn-foot:hover {
+    background: #ffc451;
 }
