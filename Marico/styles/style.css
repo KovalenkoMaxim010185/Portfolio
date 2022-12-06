@@ -1,0 +1,160 @@
+.header {
+  margin-top: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .header__logo {
+  display: flex;
+}
+.header .header__logo .header__logo_img {
+  width: 45.12px;
+  height: 41.34px;
+}
+.header .header__logo .header__logo_name {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 37px;
+  line-height: 56px;
+  color: #FFFFFF;
+  padding-left: 16.89px;
+}
+.header .header__links {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  color: #707070;
+}
+.header .header__links a:hover {
+  color: #3C82F4;
+}
+.header .header__links .header__links > li {
+  padding-bottom: 20px;
+}
+.header .header__links .header__nav_links_sub {
+  position: absolute;
+  display: none;
+  left: 0;
+  top: 10px;
+}
+.header .header__links .header__nav_links_sub li {
+  padding: 10px 10px 10px 10px;
+}
+.header .header__links li:hover .header__nav_links_sub {
+  display: block;
+}
+.header .log__btn {
+  color: #707070;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 12px 20px;
+  border: none;
+  background: none;
+}
+.header .log__btn:hover {
+  color: #3C82F4;
+}
+.header .si__btn {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #3C82F4;
+  color: #fff;
+}
+
+.intro {
+  margin-top: 128.5px;
+}
+.intro h1 {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 112px;
+  line-height: 168px;
+}
+.intro .intro__img {
+  display: block;
+  margin: auto;
+}
+
+.prop {
+  margin: 136px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.prop h2 {
+  text-align: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 60px;
+  color: #FFFFFF;
+}
+.prop .start {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+  padding: 23px 74px;
+  background: #326CF9;
+  border: none;
+  border-radius: 10px;
+}
+.prop .demo {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #707070;
+  border: 1px solid #707070;
+  padding: 23px 90px;
+  background: none;
+  border-radius: 10px;
+}
+.prop p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 38px;
+  color: #707070;
+}
+.prop p b {
+  color: #FFFFFF;
+  font-weight: 700;
+}
+.prop p:before {
+  content: url(../icons/Dot.jpg);
+  background: none;
+}
+
+body {
+  background: #000000;
+}
+
+.wrapper {
+  max-width: 1640px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #707070;
+}/*# sourceMappingURL=style.css.map */

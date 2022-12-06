@@ -1,0 +1,71 @@
+.intro {
+    margin-top: 128.5px;
+    h1 {
+        text-align: center;
+        color: #ffffff;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 112px;
+        line-height: 168px;
+    }
+    .intro__img {
+        display: block;
+        margin: auto;
+    }
+}
+.prop {
+    margin: 136px  auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+        text-align: center;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 60px;
+        color: #FFFFFF;
+    }
+    .start {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: #FFFFFF;
+        padding: 23px 74px;
+        background: #326CF9;
+        border: none;
+        border-radius: 10px;
+    }
+    .demo {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: #707070;
+        border: 1px solid #707070;
+        padding: 23px 90px;
+        background: none;
+        border-radius: 10px;
+    }
+    p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 38px;
+        color: #707070;
+            b {
+            color: #FFFFFF;
+            font-weight: 700;
+            }
+    }
+    p:before {
+        content: url(../icons/Dot.jpg);
+        background: none;
+    }
+}
