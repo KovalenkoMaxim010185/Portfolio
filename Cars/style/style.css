@@ -195,6 +195,9 @@ p {
     color: #000;
     margin-bottom: 15px;
 }
+.block__title.text__white {
+    color: #fff;
+}
 .block__link {
     margin-bottom: 60px;
     display: inline-block;
@@ -279,3 +282,41 @@ p {
     
 }
 /* END of SERVICES */
+
+/* ABOUT SRART */
+.about {
+    height: 665px;
+    background: #171616;
+    padding: 115px 0;
+}
+.about__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about__block {
+    max-width: 505px;
+}
+
+.about__text {
+    color: #B7B7B7;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.23em;
+    margin-top: 42px;
+    margin-bottom: 48px;
+}
+.about__link {
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+.about__link:hover {
+    text-decoration: none;
+}
+.about__img {
+    height: 340px;
+}
+/* END of ABOUT */
