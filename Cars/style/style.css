@@ -320,3 +320,35 @@ p {
     height: 340px;
 }
 /* END of ABOUT */
+
+/* Start of PROCESS */
+.process {
+
+}
+.process__title {
+    font-weight: 900;
+    font-size: 148px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 58px;
+    text-align: center;
+}
+.process__sub-title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 150%;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 90px;
+}
+.process__item {
+    height: 100%;
+    min-height: 150px;
+    padding: 30px 30px 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+}
+/* END of PROCESS */
