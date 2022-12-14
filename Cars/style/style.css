@@ -16,8 +16,10 @@ p {
     margin: 0 0 5px;
 }
 .container {
-    width: 1200px;
+    max-width: 1230px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 15px;
 }
 .btn {
     display: inline-flex;
@@ -434,9 +436,6 @@ p {
 /* END of CONTACTS */
 
 /* FOOTER START */
-.footer {
-
-}
 .footer__wrapper {
     height: 150px;
     display: flex;
