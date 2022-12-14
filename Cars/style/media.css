@@ -35,4 +35,13 @@
     .header__logo img {
         height: 55px;
     }
+    .intro__block {
+        text-align: center;
+    }
+    .services__content {
+        height: 300px;
+    }
+    .services__content:after {
+        display: none;
+    }
 }
