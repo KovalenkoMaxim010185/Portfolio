@@ -364,7 +364,9 @@ p {
     background: #171616;
     padding: 100px 0;
 }
+
 .contacts__form {
+    margin-top: 25px;
     max-width: 440px;
 }
 .form__row {
@@ -429,5 +431,31 @@ p {
     transform: translateY(-15px);
     font-size: 12px;
 }
-
 /* END of CONTACTS */
+
+/* FOOTER START */
+.footer {
+
+}
+.footer__wrapper {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.copywright {
+    letter-spacing: 0.15em;
+}
+.footer__soc {
+    display: flex;
+}
+.footer__soc-link {
+    margin-right: 20px;
+}
+.footer__soc-link:last-child {
+    margin-right: 0;
+}
+.footer__soc-link img {
+    height: 25px;
+}
+/* END of FOOTER */
