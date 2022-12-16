@@ -85,6 +85,8 @@ html, body {
 }
 .page__practice {
 }
+.page__about {
+}
 /* Start of HEADER */
 .header {
     position: absolute;
@@ -509,6 +511,83 @@ html, body {
     padding: 0 0 60% 0;
 }
 /* ENF of PRACTICE */
+
+/* START of ABOUT */
+.about {
+    padding: 80px 0 130px 0;
+}
+.about__container {
+}
+.about__header {
+    margin: 0 0 100px 0;
+}
+.about__body {
+    display: flex;
+}
+.about__video {
+    flex: 0 0 57%;
+    position: relative;
+    padding: 0 0 42.25% 0;
+}
+.about__video iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.about__content {
+    flex: 1 1 auto;
+    padding: 0 0 0 121px;
+}
+.about__body-top:not(:last-child) {
+    margin: 0 0 50px 0;
+}
+.content__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: calc(57/40*100%);
+    letter-spacing: 0.2px;
+}
+.content__title:not(:last-child) {
+    margin: 0 0 10px 0;
+}
+.content__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(20/14*100%);
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+.about__items {
+    margin: 50px 0 0 0;
+}
+.about__item {
+}
+.item-about {
+    display: flex;
+}
+.item__icon {
+    flex: 0 0 32px;
+}
+.item-about__body {
+}
+
+.item-about__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(24/16*100%);
+    letter-spacing: 0.1px;
+}
+.item-about__text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(24/14*100%);
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+/* END of ABOUT */
 /* END of MAIN */
 
 /* Start of FOOTER */
