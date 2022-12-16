@@ -25,6 +25,7 @@ html, body {
     color: #252B42;
     font-weight: 500;
     font-family: 'Montserrat';
+    background: #FAFAFA;
 }
 /* Конец обнуления */
 
@@ -55,6 +56,9 @@ html, body {
 .header-block {
     text-align: center;
 }
+.header-block > *:not(:last-child) {
+    margin: 0 0 10px 0;
+}
 .header-block__title {
     font-weight: 700;
     font-size: 40px;
@@ -68,6 +72,16 @@ html, body {
     line-height: calc(20/14*100%);
     letter-spacing: 0.2px;
     color: #737373;
+}
+@media (max-width: 992px) {
+    .header-block__title {
+        font-size: 35px;
+    }
+}
+@media (max-width: 767px) {
+    .header-block__title {
+        font-size: 30px;
+    }
 }
 /* Start of HEADER */
 .header {
@@ -156,8 +170,6 @@ html, body {
     position: relative;
 }
 .main-block__contaiber {
-}
-._container {
 }
 .main-block__body {
     max-width: 400px;
@@ -343,21 +355,71 @@ html, body {
 .advantages {
     margin: 80px 0 0 0;
 }
+@media (max-width: 992px) {
+    .advantages {
+        margin: 50px 0 0 0;
+    }
+}
+@media (max-width: 767px) {
+    .advantages {
+        margin: 30px 0 0 0;
+    }
+}
 .advantages__container {
 }
 .advantages__header {
+    margin: 0 0 50px 0;
+}
+@media (max-width: 767px) {
+    .advantages__header {
+        margin: 0 0 40px 0;
+    }
 }
 .advantages__body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px -30px;
 }
 .advantages__col {
+    padding: 0 15px;
+    margin: 0 0 30px 0;
+    flex: 0 1 25%;
+}
+@media (max-width: 1020px) {
+    .advantages__col {
+        flex: 0 1 50%;
+    }
+}
+@media (max-width: 560px) {
+    .advantages__col {
+        flex: 0 1 100%;
+    }
 }
 .advantages__item {
+    padding: 30px 0;
+    background: #FFFFFF;
+    text-align: center;
+}
+.advantages__item > *:not(:last-child) {
+    margin: 0 0 10px 0;
 }
 .advantages__icon {
+    height: 48px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 .advantages__value {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: calc(57/40*100%);
+    letter-spacing: 0.2px;
+    color: #252B42;
 }
 .advantages__text {
+    line-height: 150%;
+    letter-spacing: 0.1px;
+    color: #737373;
 }
 /* END of ADVANTAGES */
 /* END of MAIN */
