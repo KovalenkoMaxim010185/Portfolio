@@ -87,6 +87,8 @@ html, body {
 }
 .page__about {
 }
+.page__clients {
+}
 /* Start of HEADER */
 .header {
     position: absolute;
@@ -649,6 +651,31 @@ html, body {
 
 /* START of CLIENTS */
 
+.clients {
+    padding: 50px 0;
+}
+@media (max-width: 767px) {
+    .clients {
+        padding: 30px 0;
+    }
+}
+.clients__container {
+}
+.clients__items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.clients__item {
+    padding: 8px 15px;
+    flex: 0 1 16.6667%;
+    text-align: center;
+    min-width: 140px;
+}
+.clients__item img {
+    max-width: 100%;
+}
 /* END of Clients */
 /* END of MAIN */
 
