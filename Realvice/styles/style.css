@@ -87,7 +87,12 @@ html, body {
 }
 .page__about {
 }
-.page__clients {
+.page__clients:not(:last-child) {
+    margin: 0 0 10px 0;
+}
+.page__subscribe {
+}
+.page__support {
 }
 /* Start of HEADER */
 .header {
@@ -677,6 +682,191 @@ html, body {
     max-width: 100%;
 }
 /* END of Clients */
+
+/* START of SUBSCRIBE */
+.subscribe {
+    position: relative;
+    padding: 0 0 20px 0;
+}
+.subscribe::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 77px;
+    left: 0;
+    background: #252B42;
+}
+.subscribe__container {
+}
+.subscribe__body {
+    position: relative;
+    z-index: 2;
+    
+    padding: 30px 50px;
+    align-items: center;
+    background: #17213C;
+    border-radius: 2px;
+}
+@media (min-width: 1070px) {
+    .subscribe__body {
+        margin: 0 30px;
+    }
+}
+@media (min-width: 810px) {
+    .subscribe__body {
+        display: flex;
+        justify-content: space-between;
+    }
+    .subscribe__title {
+        max-width: 266px;
+    }
+}
+.subscribe__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(32/24*100%);
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+}
+@media (max-width: 810px) {
+    .subscribe__title {
+        margin: 0 0 20px 0;
+    }
+    .subscribe__body {
+        margin: 0 -15px;
+        padding: 20px 15px;
+    }
+}
+.subscribe__form {
+    flex: 0 1 50%;
+    display: flex;
+    align-items: center;
+}
+.subscribe__input {
+    width: 100%;
+    flex: 1 1 auto;
+    min-height: 58px;
+    padding: 0 20px;
+    border: 1px solid #E6E6E6;
+    border-right: 0;
+    border-radius: 5px 0 0 5px;
+    background: #F9F9F9;
+    color: #737373;
+}
+.subscribe__input:focus {
+    color: #000;
+}
+.subscribe__button {
+    background: #FF7B47;
+    border: 1px solid #E6E6E6;
+    border-radius: 0px 5px 5px 0px;
+    display: flex;
+    min-height: 58px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 22.5px;
+}
+@media (max-width: 810px) {
+    .subscribe__button {
+        padding: 0 15px;
+    }
+    .subscribe__input {
+        padding: 0 15px;
+    }
+}
+/* END of SUBSCRIBE */
+
+/* START of SUPPORT */
+
+.support {
+    padding: 80px 0 135px 0;
+}
+.support__container {
+}
+.support__header {
+    margin: 0 0 80px 0;
+}
+.support__items {
+    display: flex;
+    align-items: center;
+}
+.support__item {
+    flex: 0 1 33.333%;
+    background-color: #fff;
+    padding: 50px 15px;
+}
+.item-support {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item-support > *:not(:last-child) {
+    margin: 0 0 15px 0;
+}
+.active {
+    background: #252B42;
+    color: #FFFFFF;
+    padding: 80px 15px;
+}
+.active .item-support__button {
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    transition: all 0.3s ease 0s;
+}
+.active .item-support__button:hover {
+    background-color: #FFFFFF;
+    color: #FF7B47;
+}
+.item-support__icon {
+}
+.item-support__emails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item-support__email {
+    color: inherit;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    line-height: calc(24/14*100%);
+}
+.item-support__email:hover {
+    text-decoration: underline;
+}
+.item-support__lable {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(24/14*100%);
+    letter-spacing: 0.1px;
+    color: #252B42;
+}
+.item-support__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+    min-height: 44px;
+    border: 1px solid #FF7B47;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(24/14*100%);
+    letter-spacing: 0.2px;
+    color: #FF7B47;
+    transition: all 0.3s ease 0s;
+}
+.item-support__button:hover {
+    background-color: #FF7B47;
+    color: #FFFFFF;
+}
+/* END of SUPPORT */
 /* END of MAIN */
 
 /* Start of FOOTER */
