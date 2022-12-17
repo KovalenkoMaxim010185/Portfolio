@@ -515,19 +515,50 @@ html, body {
 /* START of ABOUT */
 .about {
     padding: 80px 0 130px 0;
+    background: #FFFFFF;
+}
+@media (max-width: 950px) {
+    .about {
+    padding: 50px 0 50px 0;
+}
+}
+@media (max-width: 767px) {
+    .about {
+    padding: 20px 0 50px 0;
+}
 }
 .about__container {
 }
 .about__header {
     margin: 0 0 100px 0;
 }
+@media (max-width: 950px) {
+    .about__header {
+    margin: 0 0 30px 0;
+}
+}
 .about__body {
     display: flex;
+    align-items: flex-start;
+}
+@media (max-width: 950px) {
+    .about__body {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+    .about__content:not(last-child) {
+        margin: 0 0 50px 0;
+    }
 }
 .about__video {
     flex: 0 0 57%;
     position: relative;
     padding: 0 0 42.25% 0;
+}
+@media (max-width: 950px) {
+    .about__video {
+        padding: 0 0 56.25% 0;
+    }
 }
 .about__video iframe {
     position: absolute;
@@ -539,7 +570,17 @@ html, body {
 }
 .about__content {
     flex: 1 1 auto;
-    padding: 0 0 0 121px;
+    padding: 20px 0 0 121px;
+}
+@media (max-width: 1080px) {
+    .about__content {
+    padding: 0px 0 0 50px;
+}
+}
+@media (max-width: 992px) {
+    .about__content {
+    padding: 0px 0 0 0px;
+}
 }
 .about__body-top:not(:last-child) {
     margin: 0 0 50px 0;
@@ -549,6 +590,11 @@ html, body {
     font-size: 40px;
     line-height: calc(57/40*100%);
     letter-spacing: 0.2px;
+}
+@media (max-width: 950px) {
+    .content__title {
+        font-size: 24px;
+    }
 }
 .content__title:not(:last-child) {
     margin: 0 0 10px 0;
@@ -565,6 +611,9 @@ html, body {
 }
 .about__item {
 }
+.about__item:not(:last-child) {
+    margin: 0 0 30px 0;
+}
 .item-about {
     display: flex;
 }
@@ -572,6 +621,8 @@ html, body {
     flex: 0 0 32px;
 }
 .item-about__body {
+    flex: 1 1  auto;
+    padding: 0 0 0 20px;
 }
 
 .item-about__title {
@@ -580,14 +631,25 @@ html, body {
     line-height: calc(24/16*100%);
     letter-spacing: 0.1px;
 }
+.item-about__title:not(:last-child) {
+    margin: 0 0 5px 0;
+}
 .item-about__text {
     font-weight: 600;
     font-size: 14px;
     line-height: calc(24/14*100%);
     letter-spacing: 0.2px;
     color: #737373;
+    width: 225px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 /* END of ABOUT */
+
+/* START of CLIENTS */
+
+/* END of Clients */
 /* END of MAIN */
 
 /* Start of FOOTER */
