@@ -1,0 +1,23 @@
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.main {
+    flex: 0 1 auto;
+}
+
+.footer {
+    flex: 0 0 auto;
+}
+
+.container {
+    min-width: 1110px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
