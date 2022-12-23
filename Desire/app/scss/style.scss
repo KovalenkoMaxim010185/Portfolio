@@ -3,3 +3,38 @@
 @import 'reset';
 @import 'libs';
 @import 'global';
+
+
+// -----Start of HEADER --------------------------------
+.header {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 120px;
+    }
+    &__btn {
+        border-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+}
+.logo {
+    margin: 0 auto;
+}
+.menu {
+    padding: 0 60px 0 35px;
+    &__list {
+        display: flex;
+    }    
+    &__list-item + .menu__list-item {
+        margin: 0 0 0 80px;
+    }
+    &__list-link {
+        @extend %title-font;
+        line-height: 138%;
+        color: rgba(54, 56, 56, 0.9033);
+    }
+}
+// -----End of HEADER ----------------------------------

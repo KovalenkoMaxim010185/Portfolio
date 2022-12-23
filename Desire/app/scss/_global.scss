@@ -1,7 +1,12 @@
 html, body {
     height: 100%;
 }
-
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 169%;
+}
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -17,7 +22,7 @@ html, body {
 }
 
 .container {
-    min-width: 1110px;
+    max-width: 1140px;
     margin: 0 auto;
     padding: 0 15px;
 }
