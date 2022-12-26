@@ -14,7 +14,7 @@
         height: 120px;
     }
     &__btn {
-        border-color: transparent;
+        background-color: transparent;
         border: none;
         padding: 0;
         cursor: pointer;
@@ -38,6 +38,69 @@
     }
 }
 // !-----End of HEADER ----------------------------------
+
+// *-----START of RIGHTSIDE-MENU---
+.rightside-menu {
+    max-width: 694px;
+    width: 100%;
+    padding: 40px 0 0 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: #fff;
+    box-shadow: -4px 3px 14px 0px;
+    transition: all .8s;
+    &.rightside-menu--close {
+        transform: translateX(500%);
+    }
+    &__close {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        margin: 0 0 60px 50px;
+    }
+    &__content {
+        text-align: center;
+        max-width: 485px;
+        margin: 0 auto;
+    }
+    &__logo {
+        margin: 0 0 40px 0;
+        display: inline-block;
+    }
+    &__title {
+        @extend %title-font;
+        font-size: 36px;
+        line-height: 142%;
+        color: $title;
+        position: relative;
+        margin: 0 0 17px 0;
+        padding: 0 0 14px 0;
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: 0 auto;
+            max-width: 252px;
+            height: 1px;
+            background: #6D7278;
+        }
+    }
+    &__text {
+        margin: 0 0 75px 0;
+        line-height: 169%;
+        color: #5A5A5A;
+    }
+    &__image {
+        max-width: 485px;
+    }
+}
+// !-----END of RIGHTSIDE-MENU-----
 
 //* -----START of FOOTER --------------------------------
 .footer {
@@ -176,7 +239,44 @@
     background: $title;
     }
 }
-
-
-
 //! -----END of FOOTER ----------------------------------
+
+//* -----START of MAIN ----------------------------------
+//* -----START of TOP -----------------------------------
+.top {
+    &__slider-img {
+        margin-left: -9%;
+    }
+    &__slider-item {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+    }
+    &__slider-info {
+        max-width: 645px;
+        margin: 0 0 0 25px;
+    }
+    &__slider-title {
+        @extend %title-font;
+        font-size: 110px;
+        line-height: 122%;
+        color: $title;
+        padding: 0 0 26px 0;
+        margin: 0 0 26px 0;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 185px;
+            height: 1px;
+            background: #6D7278;
+        }
+    }
+    &__slider-text {
+        max-width: 585px;
+    }
+}
+//! -----END of TOP -------------------------------------
+//! -----END of MAIN ------------------------------------
