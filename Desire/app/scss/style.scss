@@ -384,4 +384,37 @@
     }
 }
 //! -----END of NEW-COLLECTION --------------------------
+
+//* -----START of AESTHETIC ------------------------------
+.aesthetic {
+    margin: 104px 0 79px 0;
+    padding: 170px 0 156px;
+    background-image: url(../images/aestetic-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__title {
+        @extend %title-font;
+        color: $title;
+        font-size: 60px;
+        line-height: 133%;
+        position: relative;
+        padding: 0 0 22px 0;
+        margin: 0 0 22px 0;
+        max-width: 730px;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 1px;
+            left: 0;
+            bottom: 0;
+            background-color: #6D7278;
+        }
+    }
+    &__text {
+        max-width: 540px;
+        line-height: 175%;
+    }
+}
+//! -----END of AESTHETIC --------------------------------
 //! -----END of MAIN ------------------------------------
