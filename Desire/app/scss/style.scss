@@ -294,7 +294,94 @@
     &__slider-text {
         max-width: 585px;
     }
-    
 }
 //! -----END of TOP -------------------------------------
+
+//* -----START of NEW-COLLECTION ------------------------
+.new-collection {
+    text-align: center;
+    margin: 45px 0 105px;      //!! MUST BE OVERWATCHED
+    &__title {
+        @extend %title-font;
+        font-size: 36px;
+        line-height: 142%;
+        color: $title;
+        padding: 0 0 25px 0;
+        margin: 0 0 25px 0;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            margin: 0 auto;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            width: 250px;
+            height: 1px;
+            background: #6D7278;
+        }
+    }
+    &__text {
+        max-width: 730px;
+        margin: 0 auto 30px;
+    }
+}
+.collection {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 30px;
+    &__item {
+        position: relative;
+        &:hover {
+            .collection__info {
+                opacity: 1;
+            }
+        }
+    }
+    &__images {
+        min-height: 350px;
+        object-fit: cover;
+    }
+    &__info {
+        opacity: 0;
+        position: absolute;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(#ffffff, .6);
+        transition: all .5s;
+    }
+    &__info-title {
+        @extend %title-font;
+        color: $title;
+        font-size: 20px;
+        line-height: 120%;
+        padding: 0 0 19px 0;
+        margin: 0 0 20px 0;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 80%;
+            height: 1px;
+            background: #6D7278;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+    &__info-text {
+    font-weight: 600;
+    font-size: 14px;
+    color: #707070;
+    }
+}
+//! -----END of NEW-COLLECTION --------------------------
 //! -----END of MAIN ------------------------------------
