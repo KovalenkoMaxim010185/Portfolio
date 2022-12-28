@@ -338,7 +338,7 @@
 //* -----START of NEW-COLLECTION ------------------------
 .new-collection {
     text-align: center;
-    margin: 45px 0 105px;      //!! MUST BE OVERWATCHED
+    padding: 45px 0 105px;      //!! MUST BE OVERWATCHED
     &__title {
         @extend %title-font;
         font-size: 36px;
@@ -749,3 +749,22 @@
     }
 }
 //! ----- END of INSPIRATION --------------------------
+
+//* ----- START of PARTNERS ---------------------------
+.partners {
+    padding: 16px 0 0 0;
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    &__item {
+        margin: 0 auto;
+    }
+}
+//! ----- END of PARTNERS -----------------------------
+
+//* ----- STArT of MINI_COLLECTION --------------------
+.new-collection.mini__collection {
+    padding: 54px 0 72px 0;
+}
+//! ----- END of MINI_COLLECTION ----------------------
