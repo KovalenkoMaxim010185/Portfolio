@@ -45,7 +45,7 @@
             bottom: 0;
             left: 0;
             right: 0;
-            width: 52px;
+            width: 100%;
             height: 2px;
             background-color: rgba($title, .7);
             border-radius: 1px;
@@ -121,6 +121,8 @@
 .breadcrumbs {
     background: rgba(#DFDFDF, .5);
     padding: 13px 14px;
+    position: relative;
+    z-index: 999;
     &__list {
         display: flex;
     }
@@ -776,5 +778,12 @@
 //! ----- END of MINI_COLLECTION ----------------------
 //! ----- END of ABOUT PAGE ---------------------------
 
-//? ----- START of GALLARY PAGE -----------------------
+//? ----- START of CONTACT  PAGE ----------------------
+//* ----- START of MAP --------------------------------
+.map {
+    margin: -52px 0 55px 0;
+}
+//! ----- END of MAP ----------------------------------
+
+//* ----- START of CONTACT
 
