@@ -467,7 +467,7 @@
     }
     &__item--production,
     &__item--consultation {
-        padding: 0 0 30px 0;
+        padding: 0 0 38px 0;
     }
     &__item--measurementation {
         margin: 0 0 0 306px;
@@ -493,4 +493,89 @@
     }
 }
 //! ----- END OF HOW IT WORKS ----------------------------
+
+//* ----- START of GALLERY -------------------------------
+.gallery {
+    padding: 80px 0 90px;
+    &__buttons {
+        text-align: center;
+        margin: 0 0 40px 0;
+    }
+    &__btn {
+        margin: 0 13px;
+        background-color: transparent;
+        border-radius: 20px;
+        border: 1px solid rgba(#454647, .5);
+        padding: 6px 16px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 200%;
+        color: #8F8D8D;
+        cursor: pointer;
+        transition: all .5s;
+        &:hover {
+            color: $title;
+            border: rgba(#FFEF35, .5);
+            background-color: rgba(#FFEF35, .5);
+        }
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 30px 35px;
+    }
+    &__item:first-child {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    &__item img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        max-height: 1148px;
+    }
+}
+.mixitup-control-active {
+    color: $title;
+    border: none;
+    background-color: rgba(#FFEF35, .5);
+}
+//! ----- END OF GALLERY ---------------------------------
+
+//* ----- START of BLOG-BOX ------------------------------
+.blog-box {
+    margin: 0 0 46px 0;
+    &__title {
+        @extend %title-font;
+        color: $title;
+        font-size: 36px;
+        line-height: 142%;
+        text-align: center;
+        max-width: 430px;
+        margin: 0 auto 29px;
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+    }
+    &__links {
+        margin: 20px 0 7px;
+        font-size: 14px;
+        line-height: 200%;
+        color: #707070;
+    }
+    &__author,
+    &__theme {
+        color: inherit;
+    }
+    .item-title {
+        @extend %title-font;
+        color: $title;
+        font-size: 24px;
+        line-height: 158%;
+    }
+}
+//! ----- END OF BLOG-BOX --------------------------------
 //! -----END of MAIN ------------------------------------
