@@ -879,6 +879,8 @@
         object-fit: cover;
     }
     &__title {
+        width: 170px;
+        padding: 0 5px;
         transition: all 0.5s ease;
         position: absolute;
         opacity: 0;
@@ -889,7 +891,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        text-align: center;
         background-color: rgba(#ffffff, .6);
         color: $title;
         @extend %title-font;
@@ -898,4 +899,101 @@
     }
 }
 //! ----- END of CONTACT_US ---------------------------
+//! ----- END fo CONTACT PAGE -------------------------
 
+//? ----- START of BLOG PAGE --------------------------
+.blog {
+    padding: 60px 0 100px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+      
+    }
+    
+}
+.aside {
+    width: 350px;
+    margin: 0 0 0 30px;
+    &__search {
+        position: relative;
+        margin: 0 0 40px 0;
+    }
+    &__search-input {
+        padding: 6px 45px 6px 18px;
+        border: 1px solid rgba($title, .7);
+        border-radius: 20px;
+        display: block;
+        width: 100%;
+        &::placeholder {
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 200%;
+            color: #A1A1A1;
+        }
+    }
+    &__search-btn {
+        border: none;
+        background-color: transparent;
+        position: absolute;
+        top: 12px;
+        right: 13px;
+        cursor: pointer;
+    }
+    &__category {
+        margin: 0 0 36px 0;
+    }
+    &__category-title, 
+    &__posts-title, 
+    &__tags-title {
+        margin: 0 0 15px 0;
+        @extend %title-font;
+        color: $title;
+        font-size: 16px;
+        line-height: 144%;
+    }
+    &__category-item  {
+        margin: 0 0 12px 0;
+    }
+    &__category-link {
+        color: inherit;
+    }
+    &__posts {
+        margin: 0 0 40px 0;
+    }
+    &__posts-item {
+        margin: 0 0 11px 0;
+    }
+    &__posts-item_title {
+        color: inherit;
+        display: block;
+    }
+    &__posts-item_date, 
+    &__posts-item_author {
+        font-size: 14px;
+        color: #A1A1A1;
+    }
+    &__tags {
+        margin: 0 0 50px 0;
+    }
+    &__tags-link {
+        display: inline-block;
+        padding: 0 16px;
+        margin: 0 10px 10px 0;
+        line-height: 200%;
+        font-weight: 600;
+        color: #8F8D8D;
+        border: 1px solid rgba(#454647, .5);
+        border-radius: 14px;
+    }
+    &__social {
+        display: flex;
+        align-items: center;
+    }
+    &__social-item {
+        margin: 0 20px 0 0;
+    }
+}
+
+//! ----- END of BLOG PAGE ----------------------------
