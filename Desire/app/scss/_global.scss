@@ -1,80 +1,81 @@
-html, body {
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 169%;
-    color: $default;
-    overflow-x: hidden;
-    min-width: 320px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 169%;
+  color: $default;
+  overflow-x: hidden;
+  min-width: 320px;
 }
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .main {
-    flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .footer {
-    flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .container {
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 0 15px;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .container-fluid {
-    max-width: 1920px;
-    margin: 0 auto;
-    padding: 0 10px;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .slick-dots {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    li {
-        margin: 0 15px;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  li {
+    margin: 0 15px;
+  }
+  button {
+    background-color: $title;
+    border: none;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    padding: 0;
+    font-size: 0;
+  }
+  li.slick-active {
     button {
-        background-color: $title;
-        border: none;
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        padding: 0;
-        font-size: 0;
+      background: #ffef35;
     }
-    li.slick-active {
-        button {
-            background: #FFEF35;
-        }
-    }
+  }
 }
 
 .info-email {
-    display: inline-block;
-    margin: 0 0 22px 0;
-    padding: 0 0 0 30px;
-    color: $title;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 200%;
-    position: relative;
-    &::before {
-        content: '';
-        background-image: url(../images/mail.svg);
-        position: absolute;
-        top: 8px;
-        left: 0;
-        width: 16px;
-        height: 12px;
-    }
+  display: inline-block;
+  margin: 0 0 22px 0;
+  padding: 0 0 0 30px;
+  color: $title;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 200%;
+  position: relative;
+  &::before {
+    content: "";
+    background-image: url(../images/mail.svg);
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 16px;
+    height: 12px;
+  }
 }
