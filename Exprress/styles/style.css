@@ -79,13 +79,21 @@ body {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #232E35;
+  background-color: #fdfdfd;
 }
 .header__nav-logo {
   padding: 30px 0;
   font-family: "Playfair Display", serif;
   font-size: 40px;
+  color: #1f272c;
 }
 .header__nav_list {
   display: flex;
   gap: 30px;
+}
+.header__nav_list-item_link {
+  color: #232E35;
+}
+.header__nav-contacts_item-link {
+  color: #232E35;
 }/*# sourceMappingURL=style.css.map */

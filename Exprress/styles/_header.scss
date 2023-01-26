@@ -2,19 +2,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid $Default;
-
+    border-bottom: 1px solid $default;
+    background-color: #fdfdfd;
     &-logo {
         padding: 30px 0;
         font-family: 'Playfair Display', serif;
         font-size: 40px;
-        color: $Title;
+        color: $title;
     }
     &_list {
         display: flex;
         gap: 30px;
     }
     &_list-item_link {
-        color: $Default;
+        color: $default;
+    }
+    &-contacts_item-link {
+        color: $default;
     }
 }
