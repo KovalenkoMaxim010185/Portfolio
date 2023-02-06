@@ -80,8 +80,8 @@ a {
 
 .container {
   margin: 0 auto;
-  padding: 0 var(--container-offset);
-  max-width: var(--container-width);
+  padding: 0 15px;
+  max-width: 1260px;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
@@ -104,4 +104,61 @@ a {
 
 .page--ios .dis-scroll {
   position: relative;
+}
+
+.main-title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 130%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-gray-900);
+
+  span {
+    color: var(--color-ptimary);
+  }
+
+  &--home {
+    color: var(--light-color);
+  }
+}
+
+.main-descr {
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--color-storm);
+
+  &--home {
+    color: var(--light-color);
+    margin-bottom: 60px;
+  }
+}
+
+.btn {
+  padding: 15px 39px;
+  border-radius: 4px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--light-color);
+  /* white */
+
+  color: #ffffff;
+  &--fill {
+    background-color: var(--color-ptimary);
+  }
+  &--stroke {
+    &-light {
+      border-color: var(--light-color);
+    }
+  }
 }
