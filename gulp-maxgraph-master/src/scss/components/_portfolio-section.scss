@@ -1,0 +1,10 @@
+.portfolio-section {
+  background-color: var(--light-color);
+  &__title {
+    max-width: 710px;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 130%;
+    color: var(--color-gray-900);
+  }
+}
