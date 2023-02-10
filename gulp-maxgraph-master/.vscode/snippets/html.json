@@ -68,7 +68,7 @@
     ],
     "description": "Snippet for basic form"
   },
-  "basicswiper": {
+  "basicswiper": { 
     "prefix": "g-swiper",
     "body": [
       "<div class=\"swiper $1\">",
