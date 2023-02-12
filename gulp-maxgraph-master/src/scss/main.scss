@@ -4,6 +4,9 @@
 @import "fonts";
 @import "settings";
 
+// Important components
+@import "./components/slider-nav";
+
 // подключения компонентов страницы болшие компоненты
 @import "./components/header";
 @import "./components/hero";
@@ -19,5 +22,5 @@
 @import "./components/header-contacts";
 @import "./components/video-block";
 @import "./components/form-field";
-@import "./components/slider-nav";
+
 @import "./components/learn-more";

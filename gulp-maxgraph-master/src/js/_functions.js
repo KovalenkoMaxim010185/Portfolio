@@ -98,6 +98,18 @@ document.querySelector('.portfolio-section__prev').addEventListener('click', () 
   nextActiveSlide.classList.add('slider-visible');
   nextNextActiveSlide.classList.add('slider-visible');
 });
+
+// ! Testimonials slider
+const testimonialsSlider = new Swiper('.testimonials__items', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.testimonials__next',
+    prevEl: '.testimonials__prev',
+  },
+});
 // Подключение анимаций по скроллу
 // import AOS from 'aos';
 // AOS.init();
